@@ -4,7 +4,7 @@
             <div class="user-info-wrap">
                 <div class="left">
                     <div class="header">
-                        个人信息
+                        你好
                     </div>
                     <div class="avatar"><img src="../../../assets/images/avatar.png" alt=""></div>
                     <div class="welcome">欢迎你,张知洋同学</div>
@@ -15,7 +15,26 @@
                     </div>
                 </div>
                 <div class="right">
-                    
+                    <div class="header">
+                        详情
+                    </div>
+                    <div class="content">
+                        <div class="details">
+                            <span class="details-item">2019年第一学期</span>
+                            <span class="details-item">光电信息科学与工程</span>
+                            <span class="details-item">1512601班</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyright-item">
+                    <span class='designer'>设计人：张知洋</span>
+                    <span>2019.03 - 2019.05</span>
+                </div>
+                <div class="copyright-item">
+                    github: <a href="https://github.com/dark-sheep" target="_blank">dark-sheep</a>
                 </div>
             </div>
         </div>
@@ -34,6 +53,18 @@ export default {
 <style lang="less" scoped>
 .home-page-wrap {
     .home-page {
+        .copyright {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 30px;
+            .copyright-item {
+                margin-bottom: 5px;
+                .designer {
+                    padding-right: 10px;
+                }
+            }
+            
+        }
         .user-info-wrap {
             display: flex;
             & > div {
@@ -74,6 +105,14 @@ export default {
             }
             .right {
                 flex: 1;
+                .content {
+                    padding: 20px;
+                    .details {
+                        .details-item {
+                            padding-right: 20px;
+                        }
+                    }
+                }
             }
         }
     }
