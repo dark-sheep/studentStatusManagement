@@ -19,6 +19,11 @@
   border-bottom: 1px solid #ccc;
   padding: 0 50px;
   line-height: 60px;
+  background: linear-gradient(
+    to right,
+    #409EFF 0%,
+    #40f9ff 100%
+  );
   .left {
     font-size: 20px;
     font-family: "黑体";
